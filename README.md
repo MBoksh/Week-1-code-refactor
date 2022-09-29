@@ -1,2 +1,2 @@
-# Week-1-code-refractor
+# Week-1-code-refactor
 Hello World

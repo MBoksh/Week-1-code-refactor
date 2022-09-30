@@ -2,6 +2,7 @@
 
 
 ## Criteria met
+
 Semantic HTML elements have been added by removing unnecessary <div> elements and structured in logical order.
 Icon and image elements have accessible alt attributes added to them.
 Heading attributes are in sequential order.

@@ -1,191 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald&display=swap"
-      rel="stylesheet" >
-    <link rel="stylesheet" href=".Develop/assets/css/style.css" />
-    <title>Car Selector</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Social Solution Services</title>
   </head>
+
   <body>
-    <header>
+    <header class="header">
+      <h1>Hori<span class="seo">seo</span>n</h1>
       <nav>
-        <ul class="text-right">
-          <li><a href="#">Car Showroom</a></li>
-          <li><a href="#">Finance</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul>
+          <li>
+            <a href="#search-engine-optimization">Search Engine Optimization</a>
+          </li>
+          <li>
+            <a href="#online-reputation-management"
+              >Online Reputation Management</a
+            >
+          </li>
+          <li>
+            <a href="#social-media-marketing">Social Media Marketing</a>
+          </li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <h1>Car Selector</h1>
-      <img src="ford-car.png" alt="ford-fiesta" />
-      <section>
-        <h2>
-          Welcome to the Car Selector application. Select your car details from
-          the options below.
-        </h2>
+      <img
+        class="image"
+        src="./assets/images/digital-marketing-meeting.jpg"
+        alt="digital marketing meeting"
+      />
+
+      <section class="content">
+        <div id="search-engine-optimization" class="search-engine-optimization">
+          <img
+            src="./assets/images/search-engine-optimization.jpg"
+            alt="notepad with search engine optimization key points"
+            class="float-left"
+          />
+          <h2>Search Engine Optimization</h2>
+          <p>
+            The dominance of mobile internet use means that users are searching
+            for the right business as they travel, shop, or sit on their couch
+            at home. Search Engine Optimization (SEO) allows you to increase
+            your visibility and find the right customers for your business.
+          </p>
+        </div>
+        <div
+          id="online-reputation-management"
+          class="online-reputation-management"
+        >
+          <img
+            src="./assets/images/online-reputation-management.jpg"
+            alt="laptop with data graphs on screen"
+            class="float-right"
+          />
+          <h2>Online Reputation Management</h2>
+          <p>
+            The web is full of opinions, and some of these can be negative.
+            Social media allows anyone with an internet connection to say
+            whatever they want about your business. Online Reputation Management
+            gives you the control over what potential customers see when they
+            search for your business.
+          </p>
+        </div>
+        <div id="social-media-marketing" class="social-media-marketing">
+          <img
+            src="./assets/images/social-media-marketing.jpg"
+            alt="social media marketing symbols"
+            class="float-left"
+          />
+          <h2>Social Media Marketing</h2>
+          <p>
+            Social media continues to have a sizable influence on buying habits.
+            Social media marketing helps you determine which platforms are
+            suited to your brand, using analytics to find the right markets and
+            increase your lead generation.
+          </p>
+        </div>
       </section>
 
-        <section class="section-1">
-          <form class="my-form">
-            <label for="make">Choose Your Car Manufacturer:</label>
-            <select id="manufacturer">
-              <optgroup label="--Select Manufacturer--"></optgroup>
-              <option  class="manufacturer" value="ford">Ford</option>
-              <option  class="manufacturer" value="toyota">Toyota</option>
-              <option class="manufacturer" value="vauxhall">Vauxhall</option>
-              </optgroup>
-            </select>
-            <br /><br />
-            <input  type="button" onclick="getOption()" value="Submit" class="sub-button"/>
-          </form>
-        </section>
+      <aside class="benefits">
+        <div class="benefit-lead">
+          <h3>Lead Generation</h3>
+          <img
+            src="./assets/images/lead-generation.png"
+            alt="sales funnel icon"
+          />
+          <p>
+            Inbound strategies for lead generation require less work for your
+            business, bringing customers directly to your website.
+          </p>
+        </div>
 
-        <p>Now</p>
+        <div class="benefit-brand">
+          <h3>Brand Awareness</h3>
+          <img
+            src="./assets/images/brand-awareness.png"
+            alt="mind awareness icon"
+          />
+          <p>
+            Users find your business through paid and organic searches,
+            increasing the search ranking and visibility for your business.
+          </p>
+        </div>
 
-        
-        <section class="section-2">
-          <form class="my-form">
-            <label for="model">Choose Your Ford Model:</label>
-            <select id="model-1">
-              <optgroup id="ford-models" label="--Select Ford Model--">
-              <option value="fiesta">Fiesta</option>
-              <option value="focus">Focus</option>
-              <option value="galaxy">Galaxy</option>
-              <option  value="ka">Ka</option>
-              <option  value="mondeo">Mondeo</option>
-              </optgroup>
-            </select>
-            <br /><br />
-            <input  type="button" onclick="getOption1();"  value="Submit" class="sub-button" />
-          </form>
-        </section>
-        
-        <p>Or</p>
-        
-        <section class="section-3">
-          <form class="my-form">
-            <label>Choose Your Toyota Model:</label>
-            <select id="model-2">
-              <optgroup id="toyota-models" label="--Select Toyota Model--">
-              <option value="aygo">Aygo</option>
-              <option value="corolla">Corolla</option>
-              <option value="prius">Prius</option>
-              <option value="land-cruiser">Land Cruiser</option>
-              <option value="supra">Supra</option>
-              </optgroup>
-            </select>
-            <br /><br />
-            <input type="button" value="Submit" onclick="getOption2();" class="sub-button" />
-          </form>
-        </section>
-        
-        <p>Or</p>
-      
-        <section class="section-4">
-          <form class="my-form">
-            <label>Choose Your Vauxhall Model:</label>
-            <select id="model-3">
-              <optgroup id="vauxhall-models" label="--Select Vauxhall Model--">
-              <option value="astra">Astra</option>
-              <option value="corsa">Corsa</option>
-              <option value="crossland">Crossland</option>
-              <option value="grandland">Grandland</option>
-              <option value="insignia">Insignia</option>
-              <option value="mokka">Mokka</option>
-              </optgroup>
-            </select>
-            <br /><br />
-            <input type="button" value="Submit" onclick="getOption3();" class="sub-button" />
-          </form>
-        </section>
-      
-       
-       <p>Now</p>
-
-       <section class="section-5">
-        <form class="my-form">
-          <label>Choose Your Engine Size:</label>
-          <select id="engine">
-            <optgroup id="engine-size" label="--Select Engine Size--">
-            <option value="1.0-1.4">1.0 - 1.4-Litre</option>
-            <option value="1.5-1.9">1.5 - 1.9-Litre</option>
-            <option value="2.0-2.4">2.0 - 2.4-Litre</option>
-            <option value="2.5-3.0">2.5 - 3.0-Litre</option>
-            <option value="3.0+">3.0 Plus-Litre</option>
-          </optgroup>
-          </select>
-          <br /><br />
-          <input type="button" value="Submit" onclick="getOption4();" class="sub-button" />
-        </form>
-       </section>
-
-      <p>Now</p>
-
-       <section class="section-6">
-        <form class="my-form">
-          <label>Choose Your Car Colour:</label>
-          <select id="colour">
-            <optgroup id="car-colour" label="--Select Car Colour--">
-            <option value="black">Black</option>
-            <option value="white">White</option>
-            <option value="grey">Grey</option>
-            <option value="brown">Brown</option>
-            <option value="red">Red</option>
-            <option value="green">Green</option>
-            <option value="blue">Blue</option>
-            <option value="orange">Orange</option>
-            <option value="yellow">Yellow</option>
-            <option value="pink">Pink</option>
-            <option value="purple">Purple</option>
-          </optgroup>
-          </select>
-          <br /><br />
-          <input type="button" value="Submit" onclick="getOption5();" class="sub-button" />
-        </form>
-       </section>
-    
-      <br >
-
-      <section id="output">
-        <p>Your Selected Options:</p>
-        <p id="opt"></p>
-        <p id="opt-1"></p>
-        <p id="opt-2"></p>
-        <p id="opt-3"></p>
-        <p id="opt-4"></p>
-        <p id="opt-5"></p>
-      </section>  
-      
-      <section>
-        <h2>Sign Up To Our Newsletter!</h2>
-        <form>
-          <ul>
-            <li>
-              <label>Name:</label>
-              <input type="text" id="name" name="user-name" />
-            </li>
-            <li>
-              <label>Email:</label>
-              <input type="text" id="email" name="user-email" />
-            </li>
-          </ul>
-          <button type="submit">Send</button>
-        </form>
-      </section>
+        <div class="benefit-cost">
+          <h3>Cost Management</h3>
+          <img
+            src="./assets/images/cost-management.png"
+            alt="costs optimization icon"
+          />
+          <p>
+            As the search ranking for your business increases, your advertising
+            costs decrease, and you no longer need to advertise your page.
+          </p>
+        </div>
+      </aside>
     </main>
 
-    <footer class="text-center">
-      <p>© 2022 MBoksh</p>
+    <footer class="footer">
+      <h4>Made with ❤️️ by Horiseon</h4>
+      <p>&copy; 2019 Horiseon Social Solution Services, Inc.</p>
     </footer>
-    <script src="main.js"></script>
   </body>
 </html>
+
